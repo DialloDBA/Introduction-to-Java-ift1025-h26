@@ -6,11 +6,9 @@ public class PersonneTest {
 		
 		Personne p1 = new Personne("Diallo");
 		
-		p1.setAge(14);
+		p1.setAge(15);
 		
 		System.out.println(p1.getAge());
 		
-
 	}
-
 }
