@@ -5,7 +5,6 @@ public class PersonneTest {
 	public static void main(String[] args) {
 		
 		Personne p1 = new Personne("Diallo");
-		
 		p1.setAge(15);
 		
 		System.out.println(p1.getAge());
