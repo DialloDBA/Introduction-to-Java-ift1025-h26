@@ -4,10 +4,18 @@ public class PersonneTest {
 
 	public static void main(String[] args) {
 		
-		Personne p1 = new Personne("Diallo");
-		p1.setAge(15);
+		Personne p1 = new Personne("Diallo","Abdourahamane");
 		
-		System.out.println(p1.getAge());
+		try {
+			p1.setAge(0);
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(p1.fullName());
+		
+		System.out.println(p1.fullName("hello, je suis "));
+		
 		
 	}
 }
